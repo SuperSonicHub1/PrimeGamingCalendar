@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Prime Gaming Offers Calendar</h1>
+<h2>Calendars</h2>
+<ul>
+	<li>
+		<a {{ {"href": url_for("views.cal")} | xmlattr }}>
+			All
+		</a>
+	</li>
+	<li>
+		<a {{ {"href": url_for("views.in_game_content_cal")} | xmlattr }}>
+			In-Game Content
+		</a>
+	</li>
+	<li>
+		<a {{ {"href": url_for("views.games_with_prime_cal")} | xmlattr }}>
+			Games with Prime
+		</a>
+	</li>
+</ul>
+{% endblock %}
