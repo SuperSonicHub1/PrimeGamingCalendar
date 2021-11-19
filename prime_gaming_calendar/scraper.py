@@ -151,11 +151,6 @@ def get_offers() -> List[JSONObject]:
 		headers={
 			"csrf-token": get_csrf_token(),
 		},
-		cookies={
-			"session-id": "146-8168887-4057637",
-			"session-id-time": "2082787201l",
-			"ubid-main": "130-3016880-8935116"
-		},
 		json={
 			"operationName": "OffersContext_Offers",
 			"variables": {},
